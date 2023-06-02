@@ -1,48 +1,499 @@
-<!DOCTYPE html>
-<html lang="en">
+<!Doctype html>
+<!--[if IE 7 ]>    <html lang="en-gb" class="isie ie7 oldie no-js"> <![endif]-->
+<!--[if IE 8 ]>    <html lang="en-gb" class="isie ie8 oldie no-js"> <![endif]-->
+<!--[if IE 9 ]>    <html lang="en-gb" class="isie ie9 no-js"> <![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!--> <html lang="en-gb" class="no-js"> <!--<![endif]-->
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Wangzirui32 个人Github博客页面</title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
-    <script src="https://cdn.bootcdn.net/ajax/libs/jquery/3.6.0/jquery.js"></script>
-    <style>
-        html{
-            height: 100%;
-        }
-        body {
-            background-image: url("/bg.png");
-            background-repeat: no-repeat;
-            background-size: 100% 100%;
-            opacity: 0.8;
-        }
-    </style>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Foreal - Multipurpose HTML5 Template</title>
+<meta name="description" content="">
+<meta name="author" content="">
+<!--[if lt IE 9]>
+	    <script src="#"></script>
+	<![endif]-->
+
+
+<link id="default-css" rel="stylesheet" href="static/css/style.css" type="text/css" media="all">
+
+<link rel="stylesheet" href="static/css/animations.css" type="text/css" media="all">
+<link id="shortcodes-css" rel="stylesheet" href="static/css/shortcodes.css" type="text/css" media="all">
+<link id="skin-css" rel="stylesheet" href="static/css/light.css" type="text/css" media="all">
+<link rel="stylesheet" href="static/css/jquery.mCustomScrollbar.css" type="text/css">
+<link href="static/css/prettyPhoto.css" rel="stylesheet" type="text/css">
+<link href="static/css/pace.css" rel="stylesheet" type="text/css">
+<link rel="stylesheet" href="static/css/responsive.css" type="text/css" media="all">
+
+<link rel="stylesheet" href="static/css/font-awesome.min.css" type="text/css">
 </head>
 <body>
-    <div class="container">
-        <div class="jumbotron">
-            <div class="container">
-                <h1>Wangzirui32 个人网站 <small>Github Pages</small></h1>
-                <p>这里是wangzirui32的个人网站，更多信息请往下继续浏览，站点由Github Pages提供！</p>
-            </div>
-        </div>
-        <h3>CSDN专栏文章</h3>
-        <ul class="list-group">
-            <li class="list-group-item"><a href="https://blog.csdn.net/wangzirui32/category_10745800.html">Python</a></li>
-            <li class="list-group-item"><a href="https://blog.csdn.net/wangzirui32/category_10923311.html">Python网络爬虫</a></li>
-            <li class="list-group-item"><a href="https://blog.csdn.net/wangzirui32/category_10769409.html">Python模块介绍使用</a></li>
-            <li class="list-group-item"><a href="https://blog.csdn.net/wangzirui32/category_10807102.html">HTML</a></li>
-            <li class="list-group-item"><a href="https://blog.csdn.net/wangzirui32/category_11747585.html">Boostarp</a></li>
-            <li class="list-group-item"><a href="https://blog.csdn.net/wangzirui32/category_10812072.html">JavaScript</a></li>
-            <li class="list-group-item"><a href="https://blog.csdn.net/wangzirui32/category_10926142.html">jQuery</a></li>
-        </ul>
-        <h3>其他资源</h3>
-        <div class="links">
-            <a href="https://github.com/wangzirui32" class="btn btn-primary">Github</a>
-            <a href="https://blog.csdn.net/wangzirui32" class="btn btn-danger">CSDN</a>
-            <a href="https://gitee.com/wangzirui32" class="btn btn-warning">Gitee</a>
-        </div>
-    </div>
+<div class="loader-wrapper">
+<div class="loader-container">
+<div class="f">F</div>
+<div class="circle"></div>
+<div class="r">R</div>
+<div class="e">E</div>
+<div class="triangle"></div>
+<div class="l">L</div>
+</div>
+<div class="spinner">
+<div class="rect1"></div>
+<div class="rect2"></div>
+<div class="rect3"></div>
+<div class="rect4"></div>
+<div class="rect5"></div>
+</div>
+</div>
+
+<div class="wrapper">
+
+<div class="inner-wrapper">
+<div id="header-wrapper" class="dt-sticky-menu"> 
+<header id="header">
+<div class="container">
+
+<div id="logo">
+<a href="" title="Foreal"> <img src="static/picture/logo.png" alt="logo"> </a>
+</div>
+<nav id="main-menu">
+<div id="dt-menu-toggle" class="dt-menu-toggle">
+Menu
+<span class="dt-menu-toggle-icon"></span>
+</div>
+<ul class="menu">
+<li class="current_page_item menu-item-simple-parent"><a class="overline" href="" data-hover="Home">Home</a>
+<ul class="sub-menu">
+<li class="current_page_item"><a class="overline" href="javascript:;">Home-Default</a></li>
+<li><a class="overline" href="javascript:;">Home-Slider-Over-Menu</a></li>
+<li><a class="overline" href="javascript:;">Home-Toggle</a></li>
+</ul>
+<a class="dt-menu-expand">+</a>
+</li>
+<li class="menu-item-simple-parent"><a class="overline" href="about.html" data-hover="About">About</a></li>
+<li class="menu-item-simple-parent"><a class="overline" href="portfolio.html" data-hover="Works">Works</a>
+<ul class="sub-menu">
+<li><a class="overline" href="portfolio-detail.html">portfolio detail</a></li>
+<li><a class="overline" href="portfolio-detail-with-left-sidebar.html">portfolio-detail-left-sidebar</a></li>
+<li><a class="overline" href="portfolio-detail-with-right-sidebar.html">portfolio-detail-right-sidebar</a></li>
+</ul>
+<a class="dt-menu-expand">+</a>
+</li>
+<li class="menu-item-simple-parent"><a class="overline" href="blog.html" data-hover="Blog">Blog</a>
+<ul class="sub-menu">
+<li><a class="overline" href="blog-detail.html">Blog detail</a></li>
+<li><a class="overline" href="blog-detail-with-left-sidebar.html">Blog-detail-left-sidebar</a></li>
+<li><a class="overline" href="blog-detail-with-right-sidebar.html">Blog-detail-right-sidebar</a></li>
+</ul>
+<a class="dt-menu-expand">+</a>
+</li>
+<li class="menu-item-simple-parent"><a class="overline" href="team.html" data-hover="Shortcodes">Shortcodes</a>
+<ul class="sub-menu">
+<li><a class="overline" href="team.html" data-hover="Team"> Team </a></li>
+<li><a class="overline" href="services.html" data-hover="Services"> Services </a></li>
+<li><a class="overline" href="tabs-accordions.html" data-hover="tabs-accordions"> tabs-accordions </a></li>
+<li><a class="overline" href="typography.html" data-hover="typography"> typography </a></li>
+<li><a class="overline" href="columns.html" data-hover="columns"> columns </a></li>
+</ul>
+<a class="dt-menu-expand">+</a>
+</li>
+<li class="menu-item-simple-parent"><a class="overline" href="contact.html" data-hover="Contact">Contact</a></li>
+</ul>
+</nav>
+</div>
+</header>
+</div> 
+<div id="main"> 
+<div id="slider">
+<img class="light" src="static/picture/slider.jpg" alt="" title="Slider-image">
+<img class="dark" src="static/picture/slider-dark.jpg" alt="" title="Slider-image">
+</div>
+<section id="primary" class="content-full-width"> 
+<div class="dt-sc-hr-invisible-small"></div>
+<div class="fullwidth-section"> 
+<div class="container">
+<div class="intro-text"> 
+<div class="main-title">
+<h2>Who WE aRE ?</h2>
+<h6>First impression is the best impression, right? Our designs make a lasting imprint in your mind…because for us designing is an art...it comes from our heart!</h6>
+</div>
+<div class="dt-sc-one-third column first">
+<p>Class aptent taciti sociosqu ad litora torquent per conue bia nostra, per inceptos himenaeos. Nulla nunc dui, tristi ue in semper vel, congue sed ligula. Nam dolor ligula, fa ibus id sodales in, auctor fringill torquent per conubiaos .Porlass aptent taciti sociosqu ad litora torquent per coe bia nostra, per inceptos himenaeos. Nulla nunc dui, tristir ique in semper vel, congue sed ligula. Nam dolor ligula, faucibus id sodales in, auctor fringill torquent per conier bia nostra.Oreass aptent taciti sociosqe..</p>
+</div>
+<div class="dt-sc-one-third column">
+<p>Dreei aptent taciti sociosqu ad litora torquent per conue bia nostra, per inceptos himenaeos. Nulla nunc dui, tristi ue in semper vel, congue sed ligula. Nam dolor ligula, fa ibus id sodales in, auctor fringill torquent per conubiaos .Porlass aptent taciti sociosqu ad litora torquent per coe bia nostra, per inceptos himenaeos. Nulla nunc dui, tristir ique in semper vel, congue sed ligula. Nam dolor ligula, faucibus id sodales in, auctor fringill torquent per conier bia nostra.Oreass aptent taciti sociosquer..</p>
+</div>
+<div class="dt-sc-one-third column">
+<p>Ores aptent taciti sociosqu ad litora torquent per conue bia nostra, per inceptos himenaeos. Nulla nunc dui, tristi ue in semper vel, congue sed ligula. Nam dolor ligula, fa ibus id sodales in, auctor fringill torquent per conubiaos .Porlass aptent taciti sociosqu ad litora torquent per coe bia nostra, per inceptos himenaeos. Nulla nunc dui, tristir ique in semper vel, congue sed ligula. Nam dolor ligula, faucibus id sodales in, auctor fringill torquent...</p>
+</div>
+</div> 
+<div class="features">
+<img class="light" src="static/picture/feature-img.png" alt="Foreal-features" title="Features">
+<img class="dark" src="static/picture/feature-img-dark.png" alt="Foreal-features" title="Features">
+<div class="dt-sc-callout-box type6">
+<h4>Foreal is a multipurpose temple with rich features and unique layout that stands out majestically…</h4>
+<a href="#" target="_blank" class="dt-sc-button small filled black"> Purchase Now </a>
+</div>
+</div>
+<div class="dt-sc-hr-invisible-very-small"></div>
+</div>
+</div> 
+<div class="fullwidth-section">
+<div class="container">
+<div class="main-title">
+<h2>Our services</h2>
+<h6>You cannot resist temptation. Foreal is right out of the heart...try resisting!</h6>
+</div>
+<div class="dt-sc-one-third column first">
+<div class="dt-sc-ico-content type9">
+<div class="icon">
+<span class="fa fa-paw"></span>
+</div>
+<h4><a href="#" target="_blank"><span class="fa fa-paw"> </span>Creative Design</a></h4>
+<p>There are many variations of passages of Lorem Ipsum available, but the joy have suffered alteration in some format, by injected humour.</p>
+</div>
+</div>
+<div class="dt-sc-one-third column">
+<div class="dt-sc-ico-content type9">
+<div class="icon">
+<span class="fa fa-lightbulb-o"></span>
+</div>
+<h4><a href="#" target="_blank"><span class="fa fa-lightbulb-o"> </span>innovative ideas</a></h4>
+<p>There are many variations of passages of Lorem Ipsum available, but the joy have suffered alteration in some format, by injected humour.</p>
+</div>
+</div>
+<div class="dt-sc-one-third column">
+<div class="dt-sc-ico-content type9">
+<div class="icon">
+<span class="fa fa-flask"></span>
+</div>
+<h4><a href="#" target="_blank"><span class="fa fa-flask"> </span>well analysed</a></h4>
+<p>There are many variations of passages of Lorem Ipsum available, but the joy have suffered alteration in some format, by injected humour.</p>
+</div>
+</div>
+<div class="dt-sc-one-third column first">
+<div class="dt-sc-ico-content type9">
+<div class="icon">
+<span class="fa fa-laptop"></span>
+</div>
+<h4><a href="#" target="_blank"><span class="fa fa-laptop"> </span>completely responsive</a></h4>
+<p>There are many variations of passages of Lorem Ipsum available, but the joy have suffered alteration in some format, by injected humour.</p>
+</div>
+</div>
+<div class="dt-sc-one-third column">
+<div class="dt-sc-ico-content type9">
+<div class="icon">
+<span class="fa fa-plus-square"></span>
+</div>
+<h4><a href="#" target="_blank"><span class="fa fa-plus-square"> </span>lots of features</a></h4>
+<p>There are many variations of passages of Lorem Ipsum available, but the joy have suffered alteration in some format, by injected humour.</p>
+</div>
+</div>
+<div class="dt-sc-one-third column">
+<div class="dt-sc-ico-content type9">
+<div class="icon">
+<span class="fa fa-magic"></span>
+</div>
+<h4><a href="#" target="_blank"><span class="fa fa-magic"> </span>special settings</a></h4>
+<p>There are many variations of passages of Lorem Ipsum available, but the joy have suffered alteration in some format, by injected humour.</p>
+</div>
+</div>
+<div class="dt-sc-hr-invisible-very-small"></div>
+</div>
+</div>
+<div class="fullwidth-section"> 
+<div class="container">
+<div class="main-title">
+<h2>new works</h2>
+<h6>The only way to get rid of a temptation is to yield to it. Go for it…Foreal!</h6>
+</div>
+</div>
+<div id="dt-scroll-content"> 
+<ul class="dt-sc-portfolio-container portfolio-horizontal">
+<li class="portfolio">
+<figure>
+<img src="static/picture/portfolio-img1.jpg" alt="portfolio2" title="Sweet candy Packaging">
+<figcaption>
+<div class="fig-content">
+<a href="static/picture/portfolio-img1.jpg" data-gal="prettyPhoto[gallery]"><span class="image-overlay-inside"></span></a>
+<h5><a href="portfolio-detail.html">Sweet candy Packaging</a></h5>
+</div>
+</figcaption>
+</figure>
+</li> 
+<li class="portfolio">
+<figure>
+<img src="static/picture/portfolio-img2.jpg" alt="portfolio2" title="Sweet candy Packaging">
+<figcaption>
+<div class="fig-content">
+<a href="static/picture/portfolio-img2.jpg" data-gal="prettyPhoto[gallery]"><span class="image-overlay-inside"></span></a>
+<h5><a href="portfolio-detail-with-left-sidebar.html">Sweet candy Packaging</a></h5>
+</div>
+</figcaption>
+</figure>
+</li> 
+<li class="portfolio">
+<figure>
+<img src="static/picture/portfolio-img3.jpg" alt="portfolio2" title="Sweet candy Packaging">
+<figcaption>
+<div class="fig-content">
+<a href="static/picture/portfolio-img3.jpg" data-gal="prettyPhoto[gallery]"><span class="image-overlay-inside"></span></a>
+<h5><a href="portfolio-detail-with-right-sidebar.html">Sweet candy Packaging</a></h5>
+</div>
+</figcaption>
+</figure>
+</li> 
+<li class="portfolio">
+<figure>
+<img src="static/picture/portfolio-img4.jpg" alt="portfolio2" title="Sweet candy Packaging">
+<figcaption>
+<div class="fig-content">
+<a href="static/picture/portfolio-img4.jpg" data-gal="prettyPhoto[gallery]"><span class="image-overlay-inside"></span></a>
+<h5><a href="portfolio-detail.html">Sweet candy Packaging</a></h5>
+</div>
+</figcaption>
+</figure>
+</li>
+<li class="portfolio">
+<figure>
+<img src="static/picture/portfolio-img5.jpg" alt="portfolio2" title="Sweet candy Packaging">
+<figcaption>
+<div class="fig-content">
+<a href="static/picture/portfolio-img5.jpg" data-gal="prettyPhoto[gallery]"><span class="image-overlay-inside"></span></a>
+<h5><a href="portfolio-detail.html">Sweet candy Packaging</a></h5>
+</div>
+</figcaption>
+</figure>
+</li>
+<li class="portfolio">
+<figure>
+<img src="static/picture/portfolio-img6.jpg" alt="portfolio2" title="Sweet candy Packaging">
+<figcaption>
+<div class="fig-content">
+<a href="static/picture/portfolio-img6.jpg" data-gal="prettyPhoto[gallery]"><span class="image-overlay-inside"></span></a>
+<h5><a href="portfolio-detail.html">Sweet candy Packaging</a></h5>
+</div>
+</figcaption>
+</figure>
+</li>
+<li class="portfolio">
+<figure>
+<img src="static/picture/portfolio-img7.jpg" alt="portfolio2" title="Sweet candy Packaging">
+<figcaption>
+<div class="fig-content">
+<a href="static/picture/portfolio-img7.jpg" data-gal="prettyPhoto[gallery]"><span class="image-overlay-inside"></span></a>
+<h5><a href="portfolio-detail.html">Sweet candy Packaging</a></h5>
+</div>
+</figcaption>
+</figure>
+</li>
+<li class="portfolio">
+<figure>
+<img src="static/picture/portfolio-img8.jpg" alt="portfolio2" title="Sweet candy Packaging">
+<figcaption>
+<div class="fig-content">
+<a href="static/picture/portfolio-img8.jpg" data-gal="prettyPhoto[gallery]"><span class="image-overlay-inside"></span></a>
+<h5><a href="portfolio-detail.html">Sweet candy Packaging</a></h5>
+</div>
+</figcaption>
+</figure>
+</li>
+<li class="portfolio">
+<figure>
+<img src="static/picture/portfolio-img9.jpg" alt="portfolio2" title="Sweet candy Packaging">
+<figcaption>
+<div class="fig-content">
+<a href="static/picture/portfolio-img9.jpg" data-gal="prettyPhoto[gallery]"><span class="image-overlay-inside"></span></a>
+<h5><a href="portfolio-detail.html">Sweet candy Packaging</a></h5>
+</div>
+</figcaption>
+</figure>
+</li>
+<li class="portfolio">
+<figure>
+<img src="static/picture/portfolio-img10.jpg" alt="portfolio2" title="Sweet candy Packaging">
+<figcaption>
+<div class="fig-content">
+<a href="static/picture/portfolio-img10.jpg" data-gal="prettyPhoto[gallery]"><span class="image-overlay-inside"></span></a>
+<h5><a href="portfolio-detail.html">Sweet candy Packaging</a></h5>
+</div>
+</figcaption>
+</figure>
+</li>
+</ul>
+</div> 
+</div> 
+<div class="fullwidth-section">
+<div class="container">
+<div class="main-title">
+<h2>Master piece</h2>
+<h6>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores</h6>
+</div>
+<div class="dt-sc-one-fourth column first">
+<div class="dt-sc-services">
+<div class="dt-sc-icon type1">
+<img title="" alt="" src="static/picture/service-img1.png">
+<img title="" alt="" src="static/picture/service-img1-light.png">
+<h2 data-value="125" class="dt-sc-num-count">125</h2>
+<p class="overline" data-hover="Awards">Awards</p>
+</div>
+</div>
+</div>
+<div class="dt-sc-one-fourth column">
+<div class="dt-sc-services">
+<div class="dt-sc-icon type1">
+<img title="" alt="" src="static/picture/service-img2.png">
+ <img title="" alt="" src="static/picture/service-img2-light.png">
+<h2 data-value="1000" class="dt-sc-num-count">1000</h2>
+<p class="overline" data-hover="projects">projects</p>
+</div>
+</div>
+</div>
+<div class="dt-sc-one-fourth column">
+<div class="dt-sc-services">
+<div class="dt-sc-icon type1">
+<img title="" alt="" src="static/picture/service-img3.png">
+<img title="" alt="" src="static/picture/service-img3-light.png">
+<h2 data-value="30" class="dt-sc-num-count">30</h2>
+<p class="overline" data-hover="Creativity">Creativity</p>
+</div>
+</div>
+</div>
+<div class="dt-sc-one-fourth column">
+<div class="dt-sc-services">
+<div class="dt-sc-icon type1">
+<img title="" alt="" src="static/picture/service-img4.png">
+<img title="" alt="" src="static/picture/service-img4-light.png">
+<h2 data-value="252" class="dt-sc-num-count">252</h2>
+<p class="overline" data-hover="Clients">Clients</p>
+</div>
+</div>
+</div>
+<div class="dt-sc-hr-invisible-very-small"></div>
+</div>
+</div>
+<div class="fullwidth-section">
+<div class="container">
+<div class="dt-sc-testimonial-carousel-wrapper">
+<ul class="dt-sc-testimonial-carousel">
+<li>
+<div class="dt-sc-testimonial">
+<blockquote><q>Ducimus qui blanditiis praesentium voluptatum deleniti Nunc quam neque, rutrum sit amet dolor vitae, adipiscing tempus elit.</q></blockquote>
+<p> <cite> John Cena </cite> <br> CEO, ABS Communications </p>
+</div>
+</li>
+<li>
+<div class="dt-sc-testimonial">
+<blockquote><q>Etiam vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores madame whist the corrupt sweet inside.</q></blockquote>
+<p> <cite> Randy Orton </cite> <br> Managing Director, King Corporation</p>
+</div>
+</li>
+<li>
+<div class="dt-sc-testimonial">
+<blockquote><q>Sit ametAt vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores madame whist the corrupt sweet inside. porttitor tellus
+sollicitudin at.</q></blockquote>
+<p> <cite> Dean Ambrose </cite> <br> Owner, DG Associates </p>
+</div>
+</li>
+<li>
+<div class="dt-sc-testimonial">
+<blockquote><q>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti whist the corrupt sweet inside. per inceptos himenaeos. </q></blockquote>
+<p> <cite> Jack Swagger </cite> <br> Marketing Manager, KG Enterprises </p>
+</div>
+</li>
+ <li>
+<div class="dt-sc-testimonial">
+<blockquote><q>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores madame whist the corrupt sweet inside.</q></blockquote>
+<p> <cite> Dolph Zingler </cite> <br> Team Leader, Sigmontel </p>
+</div>
+</li>
+</ul>
+</div>
+<div id="pager">
+<a href=""></a>
+<a href=""></a>
+<a href=""></a>
+<a href=""></a>
+</div>
+<div class="dt-sc-hr-invisible-very-small"></div>
+</div>
+</div>
+<div class="fullwidth-section parallax parallax-img"> 
+<div class="container">
+<div class="main-title">
+<h3>F<span class="fonts">o</span>real clients</h3>
+</div>
+<div class="dt-sc-hr-invisible-small"></div>
+<div class="dt-sc-partner"> 
+<div class="dt-sc-one-sixth column no-space first">
+<a href="#">
+<img src="static/picture/client1.png" alt="">
+</a>
+</div>
+<div class="dt-sc-one-sixth column no-space">
+<a href="#">
+<img src="static/picture/client2.png" alt="">
+</a>
+</div>
+<div class="dt-sc-one-sixth column no-space">
+<a href="#">
+<img src="static/picture/client3.png" alt="">
+</a>
+</div>
+<div class="dt-sc-one-sixth column no-space">
+<a href="#">
+<img src="static/picture/client4.png" alt="">
+</a>
+</div>
+<div class="dt-sc-one-sixth column no-space">
+<a href="#">
+<img src="static/picture/client5.png" alt="">
+</a>
+</div>
+<div class="dt-sc-one-sixth column no-space">
+<a href="#">
+<img src="static/picture/client6.png" alt="">
+</a>
+</div>
+</div> 
+<div class="dt-sc-hr-invisible-small"></div>
+<div class="tweet-content"> 
+<i class="fa fa-twitter"></i>
+<div class="latest-tweets tweets_container"></div>
+<div class="slider-controls">
+<div class="pager">
+<a href="#"> <span> 1 </span> </a>
+<a href="#"> <span> 2 </span> </a>
+<a href="#"> <span> 3 </span> </a>
+</div>
+</div>
+</div> 
+</div>
+</div> 
+</section> 
+</div> 
+<footer id="footer"> 
+<div class="copyright">
+<div class="container">
+<p> Copyright &copy; 2023.Company name All rights reserved.<a target="_blank" href="https://sc.chinaz.com/moban/">&#x7F51;&#x9875;&#x6A21;&#x677F;</a> </p>
+</div>
+<ul class="dt-sc-social-icons">
+<li class="dt-sc-one-fourth column first no-space"><a class="facebook dt-sc-icon-nudge" href="#" title="Facebook"><i class="fa fa-facebook"></i></a></li>
+<li class="dt-sc-one-fourth column first no-space"><a class="twitter dt-sc-icon-nudge" href="#" title="Twitter"><i class="fa fa-twitter"></i></a></li>
+<li class="dt-sc-one-fourth column first no-space"><a class="google dt-sc-icon-nudge" href="#" title="Google-plus"><i class="fa fa-google-plus"></i></a></li>
+<li class="dt-sc-one-fourth column first no-space"><a class="rss dt-sc-icon-nudge" href="#" title="rss"><i class="fa fa-rss"></i></a></li>
+</ul>
+</div>
+</footer> 
+</div>
+</div>
+<script src="static/js/jquery-1.11.2.min.js" type="text/javascript"></script>
+<script src="static/js/jsplugins.js" type="text/javascript"></script>
+<script src="static/js/jquery.tweet.min.js" type="text/javascript"></script>
+<script src="static/js/jquery.carouFredSel-6.2.1-packed.js" type="text/javascript"></script>
+<script src="static/js/jquery.mCustomScrollbar.concat.min.js" type="text/javascript"></script>
+<script src="static/js/jquery.prettyPhoto.js" type="text/javascript"></script>
+<script src="static/js/jquery.animateNumber.min.js" type="text/javascript"></script>
+<script src="static/js/controlpanel.js" type="text/javascript"></script>
+<script src="static/js/custom.js" type="text/javascript"></script>
 </body>
 </html>
